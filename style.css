@@ -405,3 +405,53 @@ body {
     margin-bottom: 15px;
   }
 }
+
+/* Media queries para móviles */
+@media (max-width: 600px) {
+    body, .container {
+        height: 100vh;
+        width: 100vw;
+        padding: 0 10px;
+    }
+    .envelope {
+        width: 320px; /* ancho máximo para móvil */
+        height: 180px; /* alto proporcional */
+        position: relative;
+    }
+    .envelope::before {
+        border-top: 120px solid var(--envelope-tab);
+        border-right: 160px solid transparent;
+        border-left: 160px solid transparent;
+    }
+    .envelope::after {
+        border-top: 115px solid transparent;
+        border-right: 160px solid var(--envelope-cover);
+        border-bottom: 90px solid var(--envelope-cover);
+        border-left: 160px solid var(--envelope-cover);
+    }
+
+    .letter {
+        right: 15%;
+        bottom: 10px;
+        width: 65%;
+        height: 75%;
+        padding: 10px 5px;
+        font-size: 12px;
+        transform: scale(1);
+    }
+
+    .letter .text {
+        font-size: 10px;
+    }
+
+    .heart {
+        width: 25px;
+        height: 25px;
+        transform: translate(-50%, -20%) rotate(45deg);
+    }
+
+    .heart::before, .heart::after {
+        width: 25px;
+        height: 25px;
+    }
+}
