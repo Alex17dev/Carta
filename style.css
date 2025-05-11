@@ -381,4 +381,12 @@ body {
         width: 25px;
         height: 25px;
     }
+    
+    .heart::before {
+        top: -15px;
+    }
+
+    .heart::after {
+        right: 15px;
+    }
 }
