@@ -1,3 +1,4 @@
+
 /* Paleta de colores personalizada */
 :root {
     --primary: #ffffffec;
@@ -275,16 +276,19 @@ body {
         right: 18%;
         bottom: 12px;
         width: 64%;
-        height: 122%;
+        height:93%;
         padding: 12px 8px;
         font-size: 12px;
         transform: scale(1);
         box-shadow: 0 0 5px var(--shadow-color);
         border-radius: 3px;
+
+        
+        max-height: 100%;
     }
 
     .letter .text {
-        font-size: 10px;
+        font-size: 9px;
         line-height: 1.2;
     }
 
@@ -293,6 +297,8 @@ body {
         height: 25px;
         transform: translate(-50%, -20%) rotate(45deg);
     }
+    
+
 
     .heart::before, .heart::after {
         width: 25px;
@@ -306,4 +312,14 @@ body {
     .heart::after {
         right: 15px;
     }
+    
+    .flap .letter {
+        bottom: 100px;
+        transform: scale(1.1);
+        transition-delay: 1s;
+    }
+
+
+
 }
+
